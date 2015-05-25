@@ -141,6 +141,7 @@ class Handler():
 		if button.get_active():				# Button is "down"/enabled
 			tags_on.append('italic')
 		elif button.get_active() != True:	# Button is "up"/disabled
+			print (button.get_name())
 			del tags_on[tags_on.index('italic')]
 	
 	def underline(self, button):
